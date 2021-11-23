@@ -1,10 +1,10 @@
 package com.items.check.startVersion1.integration;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /*
 Create By Tsoy Vladislav 22.11.2021
+Объект для атрибутов
  */
 
 public class ItemsForDataBaseCheck {

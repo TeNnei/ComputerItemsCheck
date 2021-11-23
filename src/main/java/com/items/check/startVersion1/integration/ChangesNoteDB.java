@@ -1,18 +1,19 @@
 package com.items.check.startVersion1.integration;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /*
 Create By Tsoy Vladislav 22.11.2021
+Объект для изменений
  */
 
 public class ChangesNoteDB {
   String id;
-  String idItemForDB;
   String target;
   String oldValue;
   String newValue;
-  LocalDate dateOfChange;
+  LocalDateTime dateOfChange;
 
   public String getId() {
     return id;
@@ -20,15 +21,6 @@ public class ChangesNoteDB {
 
   public ChangesNoteDB setId(String id) {
     this.id = id;
-    return this;
-  }
-
-  public String getIdItemForDB() {
-    return idItemForDB;
-  }
-
-  public ChangesNoteDB setIdItemForDB(String idItemForDB) {
-    this.idItemForDB = idItemForDB;
     return this;
   }
 
@@ -59,11 +51,11 @@ public class ChangesNoteDB {
     return this;
   }
 
-  public LocalDate getDateOfChange() {
+  public LocalDateTime getDateOfChange() {
     return dateOfChange;
   }
 
-  public ChangesNoteDB setDateOfChange(LocalDate dateOfChange) {
+  public ChangesNoteDB setDateOfChange(LocalDateTime dateOfChange) {
     this.dateOfChange = dateOfChange;
     return this;
   }
