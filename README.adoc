@@ -4,6 +4,31 @@ image:https://img.shields.io/badge/vert.x-4.2.1-purple.svg[link="https://vertx.i
 
 This application was generated using http://start.vertx.io
 
+== Description
+
+Это рабочая версия сервера которая получает REST запрос в виде объекта JSON, с данными о состоянии коплектующих компьютера, а именно 
+процессора, видеокарты, озу, и твердонакопителе, записывает состояния в базу данных PostgreSQL и проверяет наличие измененений чего либо.
+При наличии изменений создаёт список этих самых изменений и записывает в базу данных.
+
+== Поля для JSOM объекта
+
+```
+  String id;
+  String computerTitle;
+  String processor;
+  String GPU;
+  String RAM;
+  String SSD;
+  LocalDateTime dateOfLastStatus;
+  
+```
+
+== Использованные технологии
+
+Vertx
+PostgreSQL
+Java JDBC
+
 == Building
 
 To launch your tests:
